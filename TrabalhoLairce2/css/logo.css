@@ -1,0 +1,65 @@
+/* Reset some default browser styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 600px) {
+    main {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    header, footer {
+        text-align: left;
+        padding: 10px 20px;
+    }
+    
+    .logo {
+        max-width: 200px;
+    }
+    
+    main {
+        padding: 60px 20px;
+        text-align: left;
+    }
+}
